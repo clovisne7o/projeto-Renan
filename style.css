@@ -134,16 +134,17 @@ p {
 }
 
 ul {
-  
+  border-bottom: red;
 	margin: 0px;
 	list-style-type: none;
   
   
 }
 li{
-  
+  border-bottom: 1px rgb(230, 12, 211) solid;
   margin: 0px;
 	list-style-type: none;
+  border-radius: 10px;
 }
 h3{
   margin: 0px;
