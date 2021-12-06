@@ -1,5 +1,6 @@
 new Vue({
   el: '#root',
+  
   data: {
     contatos: [],
     nome: null,
@@ -8,10 +9,20 @@ new Vue({
   methods:{
     adicionarContato: function (e) {
       e.preventDefault()
-    this.contatos.push({
-      nome: this.nome, 
-      telefone: this.telefone
-    })
+      if (this.nome && this.telefone) {
+                this.contatos.push({
+                nome: this.nome, 
+                telefone: this.telefone
+                
+                })
+      }
+      
+      else{
+        alert("FAVOR PREENCHER OS DOIS CAMPOS!!!")
+      }
+      this.nome = null;
+      this.telefone = null;  
     }
   }
 })
+
